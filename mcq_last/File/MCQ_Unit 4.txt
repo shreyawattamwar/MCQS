@@ -1,0 +1,391 @@
+Input/Output to be performed in 80386 can be done by?
+A. Separate I/O address space
+B. Memory-mapped I/O
+C. Both A and B
+D. None of the above
+Answer: C
+
+Input/output ports in 80386 can be used for how many external devices?
+A. 32 external devices 
+B. 16 external devices 
+C.  8 external devices
+D. 64 external devices
+Answer: B
+
+How does the program specify the address of the port?
+A. Using an immediate byte contant
+B. Using a value in DX
+C. Both A and B
+D. None of the above
+Answer: C
+
+What is the use of IN instruction?
+A. Move data from a regiater to a port in the I/O address space
+B. Move data between two register
+C. Move data from a port in the I/O address space to a register
+D. Both A and C
+Answer: C
+
+What is the use of OUT instruction?
+A. Move data from a regiater to a port in the I/O address space
+B. Move data between two register
+C. Move data from a port in the I/O address space to a register
+D. Both A and C
+Answer: A
+
+Which instructions are used to move stringd of data between the memory address space and port in the I/O address space?
+A. IN and OUT
+B. INS and OUTS
+C. Both A and B
+D. None of the above
+Answer: B
+
+Which of the following provides maximun flexibility?
+A. Separate I/O address space
+B. Memory- mapped I/O
+C. Both A and B
+D. None of the above
+Answer: B
+
+Which instructions are used to manipulate bits in the internal registers?
+A. AND
+B. OR
+C. TEST
+D. All of the above
+Answer: D
+ 
+Memory-mapped I/O is subject  to access protection and control while executing which mode?
+A. Real Mode 
+B. Protected Mode
+C. Virtual Mode
+D. Controlled Mode
+Answer: B
+
+Classes of I/O instruction are:
+A. Register I/O Instructions
+B. String I/O instructions
+C. Both A and B
+D. None of the above
+Answer: C
+ 
+Which instruction is used to exit from an interrupt procedure?
+A. RET 
+B. IRET
+C. INT
+D. RESET
+Answer: B
+
+ISR terminate with ________ instruction.
+A. ISR
+B. IRET
+C. CALL
+D. RET
+Answer: B
+
+Which instructions are included in Block I/O Instructions?
+A. IN and OUT
+B. INS and OUTS
+C. Both A and B
+D. None of the above
+Answer: B
+
+Which  exception is caused if the I/O privilege is violated?
+A. Divide by 0
+B. General protection exception
+C. NMI Interrupts
+D. Double Exception
+Answer: B
+
+Which instructions are called as 'sensitive instructions'?
+A. IN and OUT
+B. INS and OUTS
+C. CLI and STI
+D. All of the above
+Answer: D
+
+Each task has _________
+A. Copy of flag register
+B. IOPL
+C. Both A and B
+D. None of the above
+Answer: C
+
+Size of the bit map is ?
+A. 32 bit
+B. 16 bit
+C. Variable
+D. 8 bit
+Answer: C
+
+How many privileged instructions supported by 80386 ?
+A. 19
+B. 20
+C. 16
+D. 32
+Answer: A
+
+What is INT 3?
+A. Debug exceptions
+B. Breakpoint
+C. Overflow
+D. Bound check
+Answer: B
+
+If IF=0 ,INTR interrupts are ?
+A. Inhibited
+B. Enabled
+C. Serviced
+D. Handled
+Answer: A
+
+The 80386 uses an IDT to store how many entries of interrupt descriptors?
+A. 256
+B. 128
+C. 512
+D. 32
+Answer: A
+
+Procedure executing at which  privilege level can change IOPL?
+A. Privilege level 0
+B. Privilege level 1
+C. Privilege level 2
+D. Privilege level 3
+ANSWER: A
+
+To access I/O port the corresponding bit in the I/O bitmap must be?
+A. 1
+B. 0
+C. Can be 0 or 1
+D. Marked Invalid
+ANSWER: B
+
+The instructions that affect the system data structures must be executed when CPL is ?
+A. 3
+B. 2
+C. 1
+D. 0
+ANSWER: D
+
+What is the function of CLTS?
+A. Controls LDTR bit of task segment
+B. Controls Logical bit of task segment
+C. Clear task-switched flag
+D. Controls register of task segment
+ANSWER: C
+
+What are the source for External Interrupts?
+A. Maskable interrupts(INTR)
+B. Nonmaskable interrupt(NMI)
+C. Both A and B
+D. None of the above
+ANSWER: C
+
+What are the Processor detected exceptions?
+A. Faults 
+B. Traps
+C. Aborts
+D. All of the above
+ANSWER: D
+
+Which instructions can trigger software interrupts?
+A. INT0,INT 3,BOUND
+B. IN,OUT
+C. INS,OUTS
+D. All of the above
+ANSWER: A
+
+Faults are exceptions that are reported _______ the instruction causing the exception
+A. before
+B. during
+C. after
+D. Either A or B
+ANSWER: D
+
+In What case 'Aborts' are used?
+A. Hardware errors
+B. Inconsistent value in system tables
+C. Illegel value in system tables
+D. All of the above
+ANSWER: D
+
+Traps are exceptions that are reported_________ the instruction causing the exception
+A. before
+B. during
+C. after
+D. Either A or B
+ANSWER: C
+
+Which instructions alter the setting of IF>
+A. STI
+B. CLI
+C. Both A and B
+D. FLAG
+ANSWER: C
+
+The IF controls the acceptance of external interrupts signaled via which pin?
+A. INTR
+B. INT
+C. NMI
+D. All of the above
+ANSWER: A
+
+The processor clears IF in response to which signals?
+A. STI
+B. CLI
+C. RESET
+D. Both B and C
+ANSWER: D
+
+Which bit in EFLAG controls the recognition of debug faults?
+A. TF
+B. IF
+C. RF
+D. AF
+ANSWER: C
+
+Which interrupts have lowest priority?
+A. NMI interrupt
+B. INTR interrupt
+C. FAults except debug faults
+D. Debug traps
+ANSWER: B
+
+Interrupt descriptors are stored in a special descriptor table called?
+A. IDTR
+B. LDTR
+C. GDTR
+D. IVT
+ANSWER: A
+
+Where is IDTR located?
+A. Location 0H
+B. Fixed location
+C. Anywhere in memory 
+D. None of the above
+ANSWER: C
+
+What are the types of descriptors which can be used in the IDT?
+A. Trap gate descriptor
+B. Interrupt gate descriptor
+C. Task gate descriptor
+D. All of the above
+ANSWER: D
+
+An interrupt gate or trap gate points indirectly to ____.
+A. procedure
+B. general purpose register
+C. first instruction in the executing program
+D. previous instruction in the executing program
+ANSWER: A
+
+What does the offset field of the gate point to?
+A. Base address of the interrupt descriptor
+B. Beginning of the interrupt or exception handling procedure
+C. first instruction in the executing program
+D. previous instruction in the executing program
+ANSWER: B
+
+What is the base address and limit of IVT in real mode of 80386?
+A. Base 0 and limit of 03FFH
+B. Base 0 and limit of 0400H
+C. Base 40H and limit of 0400H
+D. Base 0 and limit of 0256H
+ANSWER: A
+
+Which instruction is used to exit from an interrupt procedure?
+A. RET
+B. IRET
+C. INT
+D. RESET
+ANSWER: B
+
+Which registers are reloaded by IRET instruction?
+A. CS
+B. EIP
+C. All of above
+D. None of above
+ANSWER: C
+
+What is invoked by interrupts or exceptions instead of CALL instruction?
+A. ISR
+B. CALL
+C. IRET
+D. RET
+ANSWER: A
+
+Which interrupt cannot be disabled by any software?
+A. Interrupt 0
+B. Interrupt 1
+C. Interrupt 2
+D. Interrupt 3
+ANSWER: C
+
+ISR terminate with _______ instruction
+A. ISR
+B. IRET
+C. CALL
+D. RET
+ANSWER: B
+
+The task activated is determined by which selector?
+A. ITS
+B. TSG
+C. TSS
+D. DPL
+ANSWER: C
+
+Which interrupt is caused when an invalid opcode is detected by the execution unit?
+A. Interrupt 4
+B. Interrupt 5
+C. Interrupt 6
+D. Interrupt 7
+ANSWER: C
+
+In case of task generated by exception handler can run at _______ privilege level
+A. only 0
+B. only 3
+C. only 2
+D. None of the above
+ANSWER: D
+
+Task gate has ______LDT
+A. Same as that of previous running code
+B. separate
+C. does not have LDT
+D. None of above
+ANSWER: B
+
+Which interrupt is reserved by Intel?
+A. Interrupt 9
+B. Interrupt 10
+C. Interrupt 11
+D. Interrupt 12
+ANSWER: A
+
+Which instruction can cause stack exceptions?
+A. ENTER
+B. LEAVE
+C. PUSH
+D. All of the above
+ANSWER: D
+
+Which interrupt occurs when the processor detects that the present bit of a descriptor is zero?
+A. Interrupt 9
+B. Interrupt 10
+C. Interrupt 11
+D. Interrupt 12
+ANSWER: C
+
+Page Fault exception occurs when paging is ______
+A. enable
+B. disable
+C. invalid
+D. None of above 
+ANSWER: A
+
+Which exception is created when the processor detects a signal from the 80287 or 80387 on the 80386/486/Pentium's ERROR input pin?
+A. Interrupt 13
+B. Interrupt 14
+C. Interrupt 15
+D. Interrupt 16
+ANSWER: D

@@ -1,0 +1,407 @@
+		UNIT-1
+		
+		80386DX-BASIC PROGRAMMING MODEL AND
+		APPLICATIONS INSTRUCTION SET
+
+	MULTIPLE CHOICE QUESTIONS
+
+ 1. The memory management of 80386 supports
+ (a) virtual memory (b) paging
+ (c) four level of protection (d) all of above
+ Answer : d
+ 2. The number of debug registers that are available in 80386, for hardware debugging
+and control is_____
+ (a) 2 (b) 4 (c) 8 (d) 16
+ Answer : c
+ 3. Operating Frequency of 80386DX is_____
+ (a) 12 MHz and 20 MHz (b) 20MHz and 33 MHz
+ (c) 32 MHz and 12 MHz (d) all of above
+ Answer : b
+ 4. Which of the unit is not the part of the internal architecture of 80386?
+ (a) Central Processing Unit (b) Memory Management Unit
+ (c) Bus Interface Unit (d) None
+ Answer : d
+ 5. 80386 support which type of descriptor table from the following?
+ (a) TDS (b) ADT (c) GDT (d) MDS
+ Answer : c
+ 6. The Unit that increases the speed of all shift and rotate operation is_____
+ (a) Memory management unit (b) execution unit
+ (c) instruction unit (d) barrel Shifter
+ Answer : d
+ 7. The memory management unit consists of_____
+ (a) segmentation unit (b) paging unit
+ (c) segmentation and paging unit (d) none
+ Answer : c
+ 8. The unit that organizes the physical memory, in terms of pages of 4 KB size each
+is_____
+ (a) segmentation unit (b) execution unit
+ (c) paging unit (d) instruction unit
+ Answer : c 
+MICROPROCESSOR (SE COMP.) 80386DX-BASIC PROGRAMMING MODEL …
+Unit I | 1.2
+ 9. Paging unit works under the control of _____
+ (a) memory management unit (b) segmentation unit
+ (c) execution unit (d) instruction unit
+ Answer : b
+ 10. The signal which indicates to the CPU, to fetch a data word for the coprocessor
+is_____
+ (a) READY (b) NMI (c) HLDA (d) PEREQ
+ Answer : d
+ 11. The central processing unit has a sub-division of
+ (a) memory unit and control unit (b) memory unit and ALU
+ (c) execution unit and instruction unit (d) execution unit and memory unit
+ Answer : c
+ 12. The unit that is used for handling data, and calculate offset address is
+ (a) memory management unit (b) execution unit
+ (c) instruction unit (d) bus interface unit
+ Answer : b
+ 13. The unit that decodes the opcode bytes, received from the 16-byte instruction code
+queue is
+ (a) memory management unit (b) execution unit
+ (c) instruction unit (d) barrel shifter
+ Answer : c
+ 14. The segmentation unit allows
+ (a) maximum size of 4GB segments (b) use of segment address components
+ (c) use of offset address components (d) all of the mentioned
+ Answer : d
+ 15. The unit that provides a four level protection mechanism, for system’s code and data
+against application program is
+ (a) central processing unit (b) segmentation unit
+ (c) bus interface unit (d) none of the mentioned
+ Answer : b
+ 16. The unit that has a prioritizer to resolve the priority of the various bus requests is
+ (a) bus sizing unit (b) data buffer
+ (c) bus control unit (d) execution unit
+ Answer : c
+ 17. The unit that interfaces the internal data bus with the system bus is
+ (a) bus sizing unit (b) data buffer
+ (c) bus control unit (d) execution unit
+ Answer : b 
+MICROPROCESSOR (SE COMP.) 80386DX-BASIC PROGRAMMING MODEL …
+Unit I | 1.3
+ 18. The unit that drives the bus enable and address signals A0-A31 is
+ (a) bus sizing unit (b) bus driving unit
+ (c) address driver (d) bus driver
+ Answer : c
+ 19. Which of the following pin when activated, allows address pipelining?
+ (a) ADS (b) NA
+ (c) AP (d) none of the mentioned
+ Answer : b
+ 20. The signal that is used to insert WAIT states in a bus cycle in 80386 is
+ (a) HOLD (b) HLDA (c) READY (d) PEREQ
+ Answer : c
+ 21. The pipeline and dynamic bus sizing units handle
+ (a) data signals (b) address signals
+ (c) control signals (d) all of the mentioned
+ Answer : c
+ 22. The instructions available in the 80386 that are not available in its real address mode
+is
+ (a) addressing techniques
+ (b) instructions for protected address mode
+ (c) instructions for interrupt handling
+ (d) all of the mentioned
+ Answer : b
+ 23. The unit that is disabled in real address mode is
+ (a) central processing unit (b) memory management unit
+ (c) paging unit (d) bus control unit
+ Answer : c
+ Explanation : The paging unit is disabled in real address mode.
+ 24. To form a physical memory address, appropriate segment register contents are
+ (a) shifted by left by 4 positions
+ (b) added to 16-bit offset address
+ (c) operated using one of addressing modes
+ (d) all of the mentioned
+ Answer : d
+ 25. The segments in 80386 real mode are
+ (a) overlapped
+ (b) non-overlapped
+ (c) either overlapped or non-overlapped
+ (d) none of the mentioned
+ Answer : c
+ Explanation : The segments in 80386 real mode are may be overlapped or nonoverlapped. 
+MICROPROCESSOR (SE COMP.) 80386DX-BASIC PROGRAMMING MODEL …
+Unit I | 1.4
+ 26. The operation that can be performed on segments in 80386 real mode is
+ (a) read (b) write
+ (c) execute (d) all of the mentioned
+ Answer : d
+ 27. The selectors contain the segment’s
+ (a) segment limit (b) base address
+ (c) access rights byte (d) all of the mentioned
+ Answer : d
+ 28. The linear address is calculated by
+ (a) effective address + segment base address
+ (b) effective address – segment base address
+ (c) effective address + physical address
+ (d) effective address – physical address
+ Answer : a
+ 29. If the paging unit is enabled, then it converts linear address into
+ (a) effective address (b) physical address
+ (c) segment base address (d) none of the mentioned
+ Answer : b
+ 30. If the paging unit is disabled, then the linear address is used as
+ (a) effective address (b) physical address
+ (c) segment base address (d) none of the mentioned
+ Answer : b
+ 31. The paging unit is enabled only in
+ (a) virtual mode (b) addressing mode
+ (c) protected mode (d) none of the mentioned
+ Answer : c
+ 32. For a single task in protected mode, the 80386 can address the virtual memory of
+ (a) 32 GB (b) 64 MB (c) 32 TB (d) 64 TB
+ Answer : d
+ 33. Which addressing mode execute its instructions within CPU without the necessity of
+reference memory for operands?
+ (a) Implied Mode (b) Immediate Mode
+ (c) Direct Mode (d) Register Mode
+ Answer : d
+ 34. What kind of addressing resemble to direct - addressing mode with an exception of
+possessing 2 - byte instruction along with specification of second byte in terms of
+8 low - order bits of memory address?
+ (a) Present - page Addressing (b) Zero - page Addressing
+ (c) Relative Addressing (d) None of the above
+ Answer : b 
+MICROPROCESSOR (SE COMP.) 80386DX-BASIC PROGRAMMING MODEL …
+Unit I | 1.5
+ 35. How is the effective address of base-register calculated?
+ (a) By addition of index register contents to the partial address in instruction
+ (b) By addition of implied register contents to the partial address in instruction
+ (c) By addition of index register contents to the complete address in instruction
+ (d) By addition of implied register contents to the complete address in instruction
+ Answer : a
+ 36. Which register holds the address for a stack whose value is supposed to be directed
+at the topmost position?
+ (a) Stack Pointer (b) Stack Register
+ (c) Both a and b (d) None of the above
+ Answer : a
+ 37. The instructions based on the stack operations are also known as 'zero address' or
+'implied instructions', because _____.
+ (a) address gets updated automatically in stack pointer
+ (b) processor can refer a memory stack without specifying the address
+ (c) both a and b
+ (d) none of the above
+ Answer : c
+ 38. What is another name of memory stack especially given for the fundamental function
+performed by it?
+ (a) Last-in-first-out (LIFO) (b) First-in-last-out (FILO)
+ (c) First-in-first-out (FIFO) (d) Last-in-last-out (LILO)
+ Answer : a
+ 39. What does the last instruction of each subroutine that transfer the control to the
+instruction in the calling program with temporary address storage , called as?
+ (a) jump to subroutine (b) branch to subroutine
+ (c) return from subroutine (d) call subroutine
+ Answer : c
+ 40. The mnemonic that is placed before the arithmetic operation is performed is
+ (a) AAA (b) AAS (c) AAM (d) AAD
+ Answer : d
+ 41. The Carry flag is undefined after performing the operation
+ (a) AAA (b) ADC (c) AAM (d) AAD
+ Answer : d
+ 42. The instruction that performs logical AND operation and the result of the operation is
+not available is
+ (a) AAA (b) AND (c) TEST (d) XOR
+ Answer : c 
+MICROPROCESSOR (SE COMP.) 80386DX-BASIC PROGRAMMING MODEL …
+Unit I | 1.6
+ 43. In the RCL instruction, the contents of the destination operand undergoes function as
+ (a) carry flag is pushed into LSB and MSB is pushed into carry flag
+ (b) carry flag is pushed into MSB and LSB is pushed into carry flag
+ (c) auxiliary flag is pushed into LSB and MSB is pushed into carry flag
+ (d) parity flag is pushed into MSB and LSB is pushed into carry flag
+ Answer : a
+ 44. The instruction that is used as prefix to an instruction to execute it repeatedly until
+the CX register becomes zero is
+ (a) SCAS (b) REP (c) CMPS (d) STOS
+ Answer : b
+ 45. Match the following
+ (a) MOvSB/SW (1) loads AL/AX register by content of a string
+ (b) CMPS (2) moves a string of bytes stored in source to destination
+ (c) SCAS (3) compares two strings of bytes or words whose length is
+stored in CX register
+ (d) LODS (4) scans a string of bytes or words
+ (a) a-3,b-4,c-2,d-1 (b) a-2,b-1,c-4,d-3
+ (c) a-2,b-3,c-1,d-4 (d) a-2,b-3,c-4,d-1
+ Answer : d
+ 46. The instructions that are used to call a subroutine from a main program and return to
+the main program after execution of called function are
+ (a) CALL, JMP (b) JMP, IRET (c) CALL, RET (d) JMP, RET
+ Answer : c
+ 47. The instruction that unconditionally transfers the control of execution to the specified
+address is
+ (a) CALL (b) JMP (c) RET (d) IRET
+ Answer : b
+ 48. NOP instruction introduces
+ (a) Address (b) Delay (c) Memory location (d) None
+ Answer : b
+ 49. Which of the following is not a machine controlled instruction?
+ (a) HLT (b) CLC (c) LOCK (d) ESC
+ Answer : b
+ 50. The interrupt for which the processor has highest priority among all the external
+interrupts is
+ (a) keyboard interrupt (b) TRAP
+ (c) NMI (d) INT
+ Answer : c 
+MICROPROCESSOR (SE COMP.) 80386DX-BASIC PROGRAMMING MODEL …
+Unit I | 1.7
+ 51. The interrupt for which the processor has highest priority among all the internal
+interrupts is
+ (a) keyboard interrupt (b) TRAP
+ (c) NMI (d) INT
+ Answer : b
+ 52. In case of string instructions, the NMI interrupt will be served only after
+ (a) initialisation of string (b) execution of some part of the string
+ (c) complete string is manipulated (d) the occurrence of the interrupt
+ Answer : c
+ 53. The NMI pin should remain high for atleast
+ (a) 4 clock cycles (b) 3 clock cycles
+ (c) 1 clock cycle (d) 2 clock cycles
+ Answer : d
+ 54. The INTR signal can be masked by resetting the
+ (a) TRAP flag (b) INTERRUPT flag
+ (c) MASK flag (d) DIRECTION flag
+ Answer : b
+ 55. For the INTR signal, to be responded to in the next instruction cycle, it must go _____
+in the last clock cycle of the current instruction
+ (a) high (b) low (c) high or low (d) unchanged
+ Answer : a
+ 56. The status of the pending interrupts is checked at
+ (a) the end of main program (b) the end of all the interrupts executed
+ (c) the beginning of every interrupt (d) the end of each instruction cycle
+ Answer : d
+ 57. Once the processor responds to an INTR signal, the IF is automatically
+ (a) set (b) reset (c) high (d) low
+ Answer : b
+ 58. If the pin LOCK (active low based) is low at the trailing edge of the first ALE pulse,
+then till the start of the next machine cycle, the pin LOCK (active low) is
+ (a) low (b) high
+ (c) low or high (d) none of the mentioned
+ Answer : a
+ 59. With the trailing edge of the LOCK (active low), the INTA (active low) goes low and
+remains in it for
+ (a) 0 clock cycle (b) 1 clock cycle
+ (c) 2 clock cycles (d) 3 clock cycles
+ Answer : c 
+MICROPROCESSOR (SE COMP.) 80386DX-BASIC PROGRAMMING MODEL …
+Unit I | 1.8
+ 60. The 80386DX is a processor that supports
+ (a) 8-bit data operand (b) 16-bit data operand
+ (c) 32-bit data operand (d) all of the mentioned
+ Answer : d
+ 61. The 80386DX has an address bus of
+ (a) 8 address lines (b) 16 address lines
+ (c) 32 address lines (d) 64 address lines
+ Answer : c
+ 62. The number of debug registers that are available in 80386, for hardware debugging
+and control is
+ (a) 2 (b) 4 (c) 8 (d) 16
+ Answer : c
+ 63. 80386DX is available in a grid array package of
+ (a) 64 pin (b) 128 pin (c) 132 pin (d) 142 pin
+ Answer : c
+ 64. The 80386 in its protected mode, in its virtual mode of operation, can run the
+applications of
+ (a) 8086 (b) 80286 (c) 80287 (d) 80387
+ Answer : a
+ 65. The 80386 in protected mode, supports all software written for
+ (a) 8086 and 80287 (b) 80286 and 80287
+ (c) 80287 and 80387 (d) 80286 and 8086
+ Answer : d
+ 66. The 32-bit control register, that is used to hold global machine status, independent
+of the executed task is
+ (a) CR0 (b) CR2
+ (c) CR3 (d) all of the mentioned
+ Answer : d
+ 67. The descriptor table that the 80386 supports is
+ (a) GDT (Global descriptor table) (b) IDT (Interrupt descriptor table)
+ (c) LDT (Local descriptor table) (d) TSS (Task state segment descriptor)
+ (e) all of the mentioned
+ Answer : e
+ 68. The registers that are together, known as system address registers are
+ (a) GDTR and IDTR (b) IDTR and LDTR
+ (c) TR and GDTR (d) LDTR and TR
+ Answer : a
+ 69. Which of the following is a system segment register?
+ (a) GDTR (b) LDTR
+ (c) IDTR (d) none of the mentioned
+ Answer : b 
+MICROPROCESSOR (SE COMP.) 80386DX-BASIC PROGRAMMING MODEL …
+Unit I | 1.9
+ 70. The test register(s) that is provided by 80386 for page cacheing is
+ (a) test control registers
+ (b) page cache registers
+ (c) test control and test status registers
+ (d) test control and page cache registers
+ Answer : c
+ 71. Among eight debug registers, DR0-DR7, the registers that are reserved by Intel are
+ (a) DR0, DR1, DR2 (b) DR4, DR5
+ (c) DR1, DR4 (d) DR5, DR6, DR7
+ Answer : b
+ 72. The registers that are used to store four program controllable break point addresses
+are
+ (a) DR5-DR7 (b) DR0-DR1 (c) DR6-DR7 (d) DR0-DR3
+ Answer : d
+ 73. The register DR6 hold
+ (a) break point status
+ (b) break point control information
+ (c) break point status and break point control information
+ (d) none of the mentioned
+ Answer : a
+ 74. The flag bits that indicate the privilege level of current IO operations are
+ (a) virtual mode flag bits (b) IOPL flag bits
+ (c) resume flag bits (d) none of the mentioned
+ Answer : b
+ 75. The registers that are not available for programmers are
+ (a) data and address registers (b) instruction pointers
+ (c) segment descriptor registers (d) flag registers
+ Answer : c
+ 76. Which of the following is not a scale factor of addressing modes of 80386?
+ (a) 2 (b) 4 (c) 6 (d) 8
+ Answer : c
+ 77. Contents of an index register are multiplied by a scale factor that may be added
+further to get the operand offset in
+ (a) base scaled indexed mode (b) scaled indexed mode
+ (c) indexed mode (d) none of the mentioned
+ Answer : b
+ 78. Contents of an index register are multiplied by a scale factor and then added to base
+register to get the operand offset in
+ (a) base scaled indexed mode (b) scaled indexed mode
+ (c) indexed mode (d) none of the mentioned
+ Answer : a 
+MICROPROCESSOR (SE COMP.) 80386DX-BASIC PROGRAMMING MODEL …
+Unit I | 1.10
+ 79. In based scaled indexed mode with displacement mode, the contents of an index
+register are multiplied by a scale factor and are added to
+ (a) base register (b) displacement
+ (c) base register and displacement (d) none of the mentioned
+ Answer : c
+ 80. The following statement of ALP is an example of MOV EBX, [EDX*4] [ECX]
+ (a) base scaled indexed mode
+ (b) scaled indexed mode
+ (c) indexed mode
+ (d) based scaled indexed mode with displacement mode
+ Answer : a
+ 81. The following statement is an example of MOV EBX, LIST [ESI*2] MUL ECX, LIST
+[EBP*4]
+ (a) base scaled indexed mode
+ (b) scaled indexed mode
+ (c) indexed mode
+ (d) based scaled indexed mode with displacement mode
+ Answer : b
+ 82. Bit field can be defined as a group of
+ (a) 8 bits (b) 16 bits (c) 32 bits (d) 64 bits
+ Answer : c
+ 83. The maximum length of the string in a bit string of contiguous bits is
+ (a) 2 MB (b) 4 MB (c) 2 GB (d) 4 GB
+ Answer : c
+ 84. The integer word is defined as
+ (a) signed 8-bit data (b) unsigned 16-bit data
+ (c) signed 16-bit data (d) signed 32-bit data
+ Answer : c
+ 85. A 16-bit displacement that references a memory location using any of the addressing
+modes is
+ (a) pointer (b) character (c) BCD (d) offset
+ Answer : d
+ 86. A decimal digit can be represented by
+ (a) unsigned integer (b) signed integer
+ (c) unpacked BCD (d) packed BCD
+ Answer : c 

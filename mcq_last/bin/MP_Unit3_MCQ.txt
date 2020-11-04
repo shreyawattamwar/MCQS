@@ -1,0 +1,750 @@
+The 80386 uses ______ level protection mechanism(s) to protect critical sections
+A. Segment
+B. priviledge
+C. Both A & B
+D. None of these
+ANSWER: C
+
+
+Which of the following checking mechanism are provided by 80386
+A. Limit
+B. Type
+C. Privilege
+D. All of above
+ANSWER: D
+
+The 80386 does _______ checking during segment level protection
+A. limit
+B. type
+C. both A & B
+D. privilege
+ANSWER: C
+
+_____ field of the descriptor specifies the type of descriptor and the intended usage of segment
+A. type
+B. limit
+C. both A & B
+D. None of these
+ANSWER: A
+
+Which of the following is/are type(s) of segment
+A. Readable
+B. Conforming
+C. Expanded Down
+D. All of the above
+ANSWER: D
+
+The 80386DX uses ________ field of segment descriptor to prevent program from addresing outside the segment
+A. limit
+B. type
+C. both A & B
+D. None of these
+ANSWER: A
+
+In which of the following case(s), 80386DX causes general protection exception when program attempts to ____
+A. access memory byte at an address > limit
+B. access memory word at an address > limit
+C. access memory dword at an address >= (limit-2)
+D. All of the above
+ANSWER: D
+
+Selector holds
+A. RPL
+B. DPL
+C. CPL
+D. All of these
+ANSWER: A
+
+Privilege level for user applications program is______
+A. 0
+B. 1
+C. 2
+D. 3
+ANSWER: D
+
+Privilege level for custom device drivers is______
+A. 0
+B. 1
+C. 2
+D. 3
+ANSWER: C
+
+Privilege level for syste services such as BIOS procedure is______
+A. 0
+B. 1
+C. 2
+D. 3
+ANSWER: B
+
+Privilege level for operating system kernel is______
+A. 0
+B. 1
+C. 2
+D. 3
+ANSWER: A
+
+The access right bytes of segment contains FEH. Which of the following statement is true?
+A. Privilege level 2
+B. Non readable code segment
+C. Conforming code segment
+D. Segment selector has been loading into segment register
+ANSWER: C
+
+The access right bytes of segment contains FEH. What is DPL value?
+A. 0
+B. 1
+C. 2
+D. 3
+ANSWER: D
+
+The access right bytes of segment contains FEH. What is type of segment
+A. Readable
+B. Executable
+C. Conforming code
+D. All of these
+ANSWER: D
+
+If a system descriptor has an access rights byte equal to 82h, What type of descriptor does it represent?
+A. LDT Descriptor
+B. Call Gate Descriptor
+C. Task Gate Descriptor
+D. Trap Gate Descriptor
+ANSWER: A
+
+If a system descriptor has an access rights byte equal to 82h, What is its privilege level
+A. 0
+B. 1
+C. 2
+D. 3
+ANSWER: A
+
+The DPL=2 and CPL=0. What should be privilege level of RPL so that data access will take place
+A. 0
+B. 1
+C. 2
+D. All of these
+ANSWER: D
+
+The RPL=1 and CPL=0. What should be privilege level of DPL so that data access will take place
+A. 0
+B. 1
+C. 2
+D. 1 or 2
+ANSWER: D
+
+______ gate allows to access the segment which has higher privilege level
+A. Trap
+B. Task
+C. Call
+D. None of these
+ANSWER: C
+
+_______ code segment has no inherent privilege level of its own
+A. Trap
+B. Task
+C. Call
+D. Conforming
+ANSWER: D
+
+If the segment is ________ it can be accessed from lower privilege level
+A. code segment
+B. conforming code segment
+C. data segment
+D. stack segment
+ANSWER: B
+
+The DPL of conforming descriptor must always be _______ the surrent CPL for valid access.
+A. less than
+B. less than or equal to
+C. greater than
+D. greater than or equal to
+ANSWER: B
+
+__________ descriptor do not define any memory space
+A. Call gate
+B. Data segment
+C. Code segment
+D. Stack segment
+ANSWER: A
+
+__________ descriptor do not have base address and limit fields
+A. Call gate
+B. Data segment
+C. Code segment
+D. Stack segment
+ANSWER: A
+
+______ acts as an interface layer between code segments at different privilege levels 
+A. call gate
+B. trap gate
+C. task gate
+D. all of these
+ANSWER: A
+
+______ gate defines the code segment and exact offset where control is to be transferred
+A. Call gate
+B. Trap gate
+C. Task gate
+D. all of these
+ANSWER: A
+
+Call gate descriptors are p[ut in 
+A. GDT
+B. LDT
+C. GDT & LDT
+D. None of these
+ANSWER: C
+
+________ field decides the number of passing parameters to the new stack
+A. DPL
+B> Type
+C. P
+D. Word Count
+ANSWER: D
+
+Page level protection involves______
+A. Restriction of addressable domain
+B. Type checking
+C. Both A & B
+D. None of these
+ANSWER: C
+
+80386 uses _______ level and _______ level protection to proitect critical sections
+A. Segment, Scaling
+B. Page, TLB
+C. Segment, Page
+D. All of these
+ANSWER: C
+
+_______ is the most privileged level
+A. 0
+B. 1
+C. 2
+D. 3
+ANSWER: A
+
+_______ is the least privileged level
+A. 0
+B. 1
+C. 2
+D. 3
+ANSWER: D
+
+Requestor privilege level is ______ bit field
+A. 1 Bit
+B. 2 Bit
+C. 3 Bit
+D. 4 Bit
+ANSWER: B
+
+EPL means_______
+A. Effective Page Level
+B. Effective Privilege Level
+C. Enhanced Page Level
+D. Enhanced Privilege Level
+ANSWER: B
+
+_________ is defined as privilege level of the task that provides the selector
+A. RPL
+B. CPL
+C. DPL
+D. EPL
+ANSWER: A
+
+_________ is defined as the privilege level at \which task can access the descriptor and segment associated with that descriptor
+A. RPL
+B. CPL
+C. DPL
+D. EPL
+ANSWER: C
+
+_______ is defined as the privilege level of at which task is currently being executed. This privilege level is not accesible to programmer
+A. RPL
+B. CPL
+C. DPL
+D. EPL
+ANSWER: B
+
+The 80386 supports __________ privileged instructions
+A. 17
+B. 19
+C. 21
+D. 32
+ANSWER: B
+
+Which of the following is/are the I/O sensitive instructions
+A. INS
+B. OUTS
+C. IN
+D. All of these
+ANSWER: D
+
+Which of the following is/are sensitive instruction(s)
+A. INS
+B. OUT
+C. CLI
+D. All of these
+ANSWER: D
+
+________ instruction dosen't nest the task
+A. JMP
+B. CALL
+C. RET
+D. All of these
+ANSWER: A
+
+Which of the following statement(s) are wrong
+A. The conforming code segments can be defined with different privilege levels
+B. The conforming code segments have their own privilege levels
+C. The conforming code segments do not remove privilege levels
+D. The conforming code segments can be shared by the code at all privilege levels
+ANSWER: B
+
+______ defines entry points to other privilege levels
+A. Trap gate
+B. Call gate
+C. Interrupt gate
+D. Task gate
+ANSWER: B
+
+Call gate descriptors can exists in ______
+A. GDT
+B. LDT
+C. GDT & LDT
+D. LDT
+ANSWER: C
+
+Which of the following is/are used to support the multitasking
+A. TSS
+B. TR
+C. Task gate descriptor
+D. All of these
+Answer: D
+
+______can cause task switches
+A. Interrupts
+B. Exceptions
+C. a and b
+D. None of these
+Answer: C
+
+To have an isolated task which of the following statements(s) is/are true ? Each task can have ____
+A. Seperate LDT and page directory
+B. Different logical to linear mapping
+C. Different linear to physical mapping
+D. all of these
+Answer: D
+
+The task enviornment (context) is stored in ______
+A. TSS descriptors
+B. TSS
+C. TR
+D. none of these
+Answer: B
+
+TSS is not accessible to _____
+A. user program
+B. program at PL0
+C. a and b
+D. none of these
+Answer: C
+
+which of the following is/are the fields of the dynamic set of TSS ?
+A. General Purpose Registers
+B. Segment Registers
+C. Instruction Pointers
+D. All of these
+Answer: D
+
+which of the following is/are the fields of dynamic set of TSS ?
+A. Flag register
+B. Back link
+C. Instruction Pointer
+D. all of these
+Answer: D
+
+Saving ______ during task switch gurantees that the task can be restarted at the point at which it was stopped
+A. EFLAGS
+B. segment registers
+C. EIP
+D. General purpose registers
+Answer: C
+
+_______ is used by the 80386 to keep track of previous task.
+A. EFLAGS
+B. EIP
+C. Back link
+D. none of these
+Answer: C
+
+which of the following is/are the fields of the static set of the TSS
+A. Selector of the task's LDT
+B. PDBR register
+C. T-bit
+D. all of these
+Answer: D
+
+which of the following is/are the fields of the static set of the TSS
+A. I/O map offset
+B. Pointers to the stack
+C. PDBR register
+D. all of these
+Answer: D
+
+TSS descriptor must appear in the _____
+A. LDT
+B. GDT
+C. a or b
+D. none of these
+Answer: B
+
+Privilege level of the stack segment must be _____ the privilege level of the code segment
+A. same
+B. greater tha
+C. less than
+D. greater than or equal to
+Answer: A
+
+Fields ESP0,ESP1,ESP2,SS0,SS1 and SS2 of TSS hold the _____ for privilege levels 0,1 and 2
+A. stack selectors
+B. stack sequence pointers
+C. both a and b
+D. none of these
+Answer: C
+
+______ field in TSS holds the 16-bit offset of the beginning of the I/O permission bit map
+A. Bit map offset
+B. Back link
+C. CR3
+D. EIP
+Answer: A
+
+The B-bit = 1 in the type field of TSS descriptor indicates _________ 
+A. operand is byte
+B. operand is 16-bit
+C. operand is 32-bit
+D. task is busy bit
+Answer: D
+
+The 80386, requires minimum ______ bytes of storage i order to perform a context save.
+A. 80
+B. 104
+C. 128
+D. 256
+Answer: B
+
+What is the size of TSS ?
+A. 80
+B. 104
+C. 128
+D. 256
+Answer: B
+
+The maximum limit for TSS is ______
+A. 64KB
+B. 1 MB
+C. 4GB
+D. 64TB
+Answer: C
+
+_______ specifies the currently executing task by pointing to the TSS
+A. TP
+B. TR
+C. TSSD
+D. none of these
+Answer: B
+
+The invisible portion of the task register holds _____
+A. base
+B. Limit
+C. a and b
+D. none of these
+Answer: C
+
+Several programs can be executed simultaneously because of _______
+A. page protection
+B. segment protection
+C. multitasing
+D. segmentation
+Answer: C
+
+Program control switches from one task to the another task after a fixed interval of time in case of _____
+A. time-share system
+B. frequency shared system
+C. both a and b
+D. none of these
+Answer: A
+
+With the help of task manegment data structures 80386 can switch from one _____ to another.
+A. interrupt
+B. procedure
+C. task
+D. stack
+Answer: C
+
+_____ may cause task switches
+A. interrupts
+B. exceptions
+C. both a and b
+D. none of these
+Answer: C
+
+Each task have ____ mapping.
+A. Logical to linear
+B. Liner to physical
+C. sequential
+D. both a and b
+Answer: D
+
+Each task can have ______
+A. Different logic to linear mapping
+B. Liner to physical mapping
+C. seperate LDT and page directory
+D. all of these
+Answer: D
+
+80386 involves the task _______
+A. Directly
+B. Indirectly
+C. both a and b
+D. none of these
+Answer: C
+
+______ is used by the 80386 to keep track of previous task 
+A. Return
+B. Back link
+C. Stack
+D. None of these
+Answer: B
+
+In TSS the field "T" is used for _______
+A. enabling task switch trap
+B. disabling task switch trap
+C. both a and b
+D. none of these
+Answer: C
+
+Processor gets a task gate descriptors only when the maximum of selectors's _____ and the _____ of the procedure is numerically less than or equal to the _____ of the descriptor.
+A. DPL, RPL, CPL 
+B. CPL, DPL, RPL 
+C. RPL, CPL, DPL 
+D. CPL, RPL, DPL
+Answer: C
+
+when the task gate is used, the ______ of the target TSS descriptor is not used for privilege checking
+A. RPL
+B. CPL
+C. both a and b
+D. DPL
+Answer: D
+
+which of the following statements is/are true ?
+A. Task switches can not be recursive
+B. Tasks are not re-entrant
+C. currently running task is always a busy task
+D. All of these
+Answer: D
+
+which of the following case(s) 80386 does the task switch ?
+A. A long jump or call instruction contains a selector which refers to a TSS descriptor
+B. Selector in a long jump or call instruction refer to a task gate
+C. Interrupt selector refers to a task gate
+D. All of these
+Answer: D
+
+which of the following check(s) is/are performed during task switching without task gate ?
+A. Priviledge check
+B. Limit Check
+C. Present check
+D. All of these
+Answer: D
+
+In the indirect method, task switching is done by _______ a task gate.
+A. jumping to
+B. calling
+C. a or b
+D. none of these
+Answer: C
+
+when ______ is used for task switch, the DPL of the new TSS descriptor is not used for privilage checking.
+A. trap gate
+B. call gate
+C. task gate
+D. none of these
+Answer: C
+
+when task gate is used, the _____ of the task gate is compared with the ____ and ____ of the gate selector ?
+A. DPL, CPL, RPL
+B. CPL, DPL, RPL
+C. RPL, CPL, DPL
+D. none of these
+Answer: A
+
+which field of selector is used to identify descriptor table ?
+A. Index
+B. TI
+C. RP
+D. All of these
+Answer: B
+
+_____ instruction doesn't nest the task
+A. JMP
+B. CALL
+C. RET
+D. All of these
+Answer: A
+
+The _____ bit shows that current task is child task.
+A. G
+B. TSS
+C. B
+D. NT
+Answer: D
+
+Which of the following is/are the I/O sensitive instruction ?
+A. INS
+B. OUTS
+C. IN
+D. all of these
+Answer: D
+
+Which of the following is/are the sensitive instructions ?
+A. INS
+B. OUT
+C. CLI
+D. all of these
+Answer: D
+
+The 8086 implements multitasking in  _____________ mode.
+A. Real address mode
+B. Protected mode
+C. Both
+D. None
+Answer: B
+
+________ allows execution of several programs
+A. Page protection
+B. Segment protection
+C. Multitasking
+D. Segmentation
+Answer: C
+
+The task may have ____ memory resources.
+A. Local
+B. Global
+C. Segmented
+D. Both a and b
+Answer: D
+
+The task management data structures used for multitasking are __________.
+A. TR
+B. TSS
+C. TSS descriptor
+D. All of above
+Answer: D
+
+ __________ causes task switches
+A. Interrupts
+B. Exceptions
+C. Both a and b
+D. None
+Answer: C
+
+which of the following support multitasking?
+A. Task gate
+B. TSS
+C. Task gate descriptor
+D. All of these
+Answer: D
+
+Every task has a separate _______________ and page directory.
+A. LDT
+B. LIDT
+C. SIDT
+D. PIDT
+Answer: A
+
+The task can be invoked _________________.
+A. Directly
+B. Indirectly
+C. Both
+D. None
+Answer: C
+
+If _____ instruction is used to invoke the task no return linkage to the earlier task is available.
+A. Call
+B. Return
+C. INT
+D. Jump
+Answer: D
+
+For each task there is a unique selector called ________
+A. Task state selector
+B. Task gate selector
+C. Task state descriptor
+D. None
+Answer: A
+
+
+The _______ can be read and changed by instructions in the task register.
+A. Visible portion
+B. Invisible portion
+C. Both
+D. None
+Answer: A
+
+The indirect method of task switching is done by ____________ a task gate.
+A. Calling
+B. Jumping
+C. Returning
+D. Both a or b
+Answer: D
+
+___________  instruction doesn't nest the task.
+A. JMP
+B. CALL
+C. RET
+D. All 
+Answer: A
+
+The ________ indicates that current task is a child task
+A. G
+B. TS
+C. B
+D. NT
+Answer: D
+
+___________ are used for task switching.
+A. Trap gate 
+B. Interrupt gate
+C. Call gate
+D. Task gates
+Answer: D
+
+Task switches performs its operation in about_______ microseconds
+A. 15
+B. 10
+C. 17
+D. 16
+Answer: C
+
+The size of TSS is____________ bytes
+A. 104
+B. 96
+C. 128
+D. 108
+Answer: A
+
+__________ consists of all the information needed for either starting or stopping the task.
+A. TSS
+B. General purpose registers
+C. i/o permission bitmap
+D. all
+answer: A
+
+what is the width of TR?
+A. 16bits
+B. 48bits
+C. 24bits
+D. 32bits
+Answer: A
